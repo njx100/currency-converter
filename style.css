@@ -36,7 +36,6 @@ body {
     font-size: 25px;
     color: aliceblue;
     /* width: 30%; */
-    font-variant-numeric: tabular-nums;
 }
 
 .exchange-rate {

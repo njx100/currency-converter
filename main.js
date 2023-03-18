@@ -12,7 +12,7 @@ async function updateRate() {
         const firstCurrency = currencyFirstEl.value;
         const secondCurrency = currencySecondEl.value;
         worthSecondEl.value = (worthFirstEl.value * (data.conversion_rates[secondCurrency])).toFixed(4);
-        exchangeRateEl.innerText = `${worthFirstEl.value} ${firstCurrency} = ${worthSecondEl.value} ${secondCurrency}`; 
+        exchangeRateEl.innerText = `1 ${firstCurrency} = ${data.conversion_rates[secondCurrency]} ${secondCurrency}`; 
     } catch (error) {
         exchangeRateEl.innerText = "An error happened, try again later!"
     }
